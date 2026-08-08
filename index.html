@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KeyPro Loader</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="loader">
+
+    <h1>🔑 KeyPro Loader</h1>
+
+    <p>
+      KeyProファイルを読み込んでください。
+    </p>
+
+    <input
+      type="file"
+      id="keyproFile"
+      accept=".zip"
+    >
+
+    <div id="status">
+      待機中...
+    </div>
+
+    <section id="result" hidden>
+
+      <h2>KeyPro</h2>
+
+      <p id="projectName"></p>
+
+      <p id="version"></p>
+
+      <h2>🔑 Key</h2>
+
+      <code id="key"></code>
+
+      <h2>🎁 Effect</h2>
+
+      <p id="effect"></p>
+
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="loader.js"></script>
+
+</body>
+</html>
